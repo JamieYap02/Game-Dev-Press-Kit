@@ -30,13 +30,13 @@ Damage feedback: floating numbers (white = normal, red = crits, color-coded by e
 
 Loot & Inventory
 
-Rarity tiers: Common → Uncommon → Rare → Epic → Legendary → Iconic.
+Rarity tiers: Common → Rare → Epic → Legendary → Iconic.
 
 Weapons/armor have score-based ratings, with upgrades available via vendors using Tier Components (e.g., Tier 3 Upgrade Component).
 
 Iconic loot: tied to bosses via the Nemesis system (post-launch). Each has unique randomized variants.
 
-Ammo: shared per type, auto-picked up unless stack is full (TABG style).
+Ammo: shared per type, auto-picked up unless stack is full.
 
 Inventory system:
 
