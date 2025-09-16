@@ -37,7 +37,7 @@ Red = crit
 
 Loot & Inventory
 
-Rarity tiers: Common → Rare → Epic → Legendary → Iconic.
+Rarity tiers: Common (white) → Uncommon (blue) → Rare (purple) → Epic(pink) → Legendary (orange) → Iconic (red).
 
 Weapons/armor score system: upgradable with Tier Components (e.g., Tier 3 Upgrade Component).
 
