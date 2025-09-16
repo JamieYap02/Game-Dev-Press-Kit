@@ -1,156 +1,168 @@
-Game Design Document
-Overview
+🎮 Game Design Document – Overview
+Core Vision
 
-A futuristic open-world RPG shooter set in a cyberpunk-inspired city. The game emphasizes fast-paced combat, deep character builds, and meaningful loot progression. Players grow their reputation and strength by acquiring weapons, armor, cybernetics, and accessories—each with unique attributes and upgrade paths.
+A futuristic open-world RPG shooter set in a cyberpunk-inspired city. The game emphasizes fast-paced combat, deep character builds, and meaningful loot progression. Players rise from the slums to confront corporate elites by acquiring weapons, armor, cybernetics, and accessories—each with unique attributes, rarity tiers, and upgrade paths.
 
-Core Features
+✦ Core Features
 Character & Progression
 
 Single protagonist with flexible build paths.
 
-Skill trees designed as animated cards, making unlocks feel tangible and unique.
+Skill trees presented as animated cards, giving unlocks tangible, collectible feel.
 
-Cybernetics (3 slots): augmentations that provide passive buffs or active abilities.
+Cybernetics (3 slots): augmentations offering passive buffs or active abilities.
 
 Accessories (3 slots): grenades, drones, traps, or utility items for combat flexibility.
 
-Armor system (head, chest, legs, boots) to reinforce builds (tank, damage, stealth, support).
+Armor system: head, chest, legs, boots → enables tank, DPS, stealth, or support playstyles.
+
 
 Combat
 
-High-mobility FPS combat: sprint, dash, crouch, wall-slides (depending on skills/cybernetics).
+High-mobility FPS → sprint, dash, crouch, wall-slides (via skills/cybernetics).
 
-Physics-driven projectiles for gunplay that feels dynamic.
+Physics-driven projectiles → dynamic gunplay (TABG-inspired).
 
-Weapon modding system: 3 slots per weapon, with any combination of mods attachable.
+Weapon modding system → 3 slots per weapon; mods interchangeable.
 
-Accessories provide tactical depth (grenades, deployables, drones).
+Accessories → tactical depth (deployables, grenades, drones, hacking tools).
 
-Damage feedback: floating numbers (white = normal, red = crits, color-coded by element/damage type).
+Damage feedback → floating numbers:
+
+White = normal
+
+Red = crit
+
+
 
 Loot & Inventory
 
 Rarity tiers: Common → Rare → Epic → Legendary → Iconic.
 
-Weapons/armor have score-based ratings, with upgrades available via vendors using Tier Components (e.g., Tier 3 Upgrade Component).
+Weapons/armor score system: upgradable with Tier Components (e.g., Tier 3 Upgrade Component).
 
-Iconic loot: tied to bosses via the Nemesis system (post-launch). Each has unique randomized variants.
+Iconics: unique drops from bosses; randomized variants.
 
-Ammo: shared per type, auto-picked up unless stack is full.
+Ammo system: pooled by type, auto-pickup until full.
 
-Inventory system:
 
-Weapons only in weapon slots (2 primaries + sidearm/melee).
+Inventory design:
 
-Armor only in armor slots.
+Weapons → 2 primaries + 1 sidearm/melee.
 
-Cybernetics + accessories in dedicated slots.
+Armor → armor slots only.
 
-Backpack limited to ammo, mods, consumables, and misc.
+Cybernetics + accessories → dedicated slots.
 
-Stash system: players can store any item (weapons, armor, etc.) in properties or access stashes at specific vendors.
+Backpack → ammo, mods, consumables, misc.
 
-World
 
-Districts:
+World & Districts
 
-Industrial Docks: warehouses, smuggling hubs, gritty combat spaces.
+Industrial Docks → warehouses, small combat spaces.
 
-Central Market/Slums: busy trade, narrow alleys, black market missions.
+Central Market/Slums → trade, gangs,  narrow alleys.
 
-Corporate District: sleek skyscrapers, corporate HQs, restricted zones.
+Corporate District → skyscrapers, corpo HQs, higher level.
 
-Seamless mission integration: objectives emerge naturally from the environment (contracts, vendors, contacts).
+Additional planned districts (expandable):
 
-Vendors: upgrade, stash, and trade systems.
+Outskirts/Wastelands (gang hideouts, server farms).
+
+Seamless mission integration: contracts, vendors, and encounters flow naturally.
+
+Vendors → upgrades, stash access, black-market trades.
+
 
 Multiplayer
 
-Optional cooperative play: friends can join your open-world session.
+Optional co-op → friends join host’s world session.
 
-Loot drops & enemies scale to the host player’s level.
+Enemy scaling & loot scaling tied to host’s level.
 
-Trading system planned for future updates.
 
 Visual & UI Polish
 
-Inventory UI allows player movement while open (but no combat).
+Inventory UI: semi-transparent dark grey overlay; game remains visible.
 
-Equip feedback: small particle effects (glitch burst, energy pulse, holographic scan) to make equipping items feel satisfying.
+Player movement allowed while open (no combat).
 
-Stylized aesthetic: fast, vibrant, and playful with cyberpunk undertones, avoiding static asset-flip look.
+Equip feedback: particle effects (glitch burst, energy pulse, holo-scan).
 
-Timeline & Milestones
+Style: vibrant, fast, avoids static/asset-flip look.
+
+
+📅 Timeline & Milestones
 2025 – 2026: Foundations
 
 Goal: Build technical framework and core systems.
 
 ✔️ Basic player movement (walk, sprint, crouch, dash).
 
-✔️ Basic shooting and weapon animations.
+✔️ Basic shooting + placeholder weapon animations.
 
-⏳ Inventory UI (weapon/armor/cybernetic/accessory slots, backpack).
+⏳ Inventory UI (weapons/armor/cybernetics/accessories/backpack).
 
-⏳ Backend inventory logic (arrays, auto-categorization, ammo auto-pickup).
+⏳ Backend inventory logic (arrays, auto-categorization, ammo pickup).
 
-🔄 Item sprites and placeholder assets.
+🔄 Item sprites & placeholder assets.
 
-🔄 Weapon spawning and usable pickups.
+🔄 Weapon spawning & pickups.
 
-🔄 Early AI for combat testing.
+🔄 Early AI (combat test dummies).
 
-🔄 Save system (cloud save via Supabase + encryption).
+🔄 Save system (Supabase cloud + encryption).
 
 2026 – 2027: Core Gameplay
 
-Goal: Establish the world, loot, and player progression.
+Goal: Establish progression & world structure.
 
-🔄 District blockouts: Industrial, Market, Corporate.
+🔄 District blockouts: Industrial, Slums, Central, High-end, Corporate.
 
-🔄 Populate maps with NPCs, loot drops, and combat zones.
+🔄 Populate with NPCs, loot drops, combat encounters.
 
-🔄 Implement loot rarity, score system, and upgrade vendors.
+🔄 Loot rarity system + upgrade vendors.
 
-🔄 Full weapon modding system.
+🔄 Weapon modding system (3 slots).
 
-🔄 Cybernetics (passives/abilities) and accessories (grenades/drones).
+🔄 Cybernetics (passives/abilities) + accessories (grenades/drones).
 
-🔄 Skill tree (card-style UI, animations).
+🔄 Skill tree (animated card UI).
 
-🔄 Mission progression structure.
+🔄 Mission structure & progression.
 
 2027 – 2028: Prototype & Polishing
 
-Goal: Deliver a playable prototype and refine systems.
+Goal: Playable vertical slice + alpha.
 
-🔄 Playable prototype: full combat loop, loot, inventory, and progression.
+🔄 Prototype: combat loop, loot, inventory, progression.
 
-🔄 Early missions and district integration.
+🔄 First missions & district integration.
 
-🔄 Co-op multiplayer session hosting.
+🔄 Co-op session hosting.
 
-🔄 Closed alpha testing, bug fixes, and backend optimization.
+🔄 Closed alpha, bug fixes, backend optimization.
 
 2028 Q2 – Q3: Launch Prep & Release
 
-Goal: Final polish and launch.
+Goal: Final polish + marketing.
+
+🔄 Polished AI + diverse enemy types.
 
 🔄 Refined animations, UI, VFX.
 
-🔄 Polished AI encounters and enemy types.
+🔄 Voiceovers + cinematic cutscenes.
 
-🔄 Voiceover + cinematic cutscenes.
+🔄 Public demo, trailers, Steam marketing.
 
-🔄 Public demo and marketing.
+🔄 Performance optimization + QA.
 
-🔄 Optimization for stability.
-
-🚀 Launch Q3 2028.
+🚀 Launch: Q3 2028
 
 Transparency & Community
 
-Public progress tracked with ✔️ ⏳ 🔄 markers.
+Progress tracked via ✔️ ⏳ 🔄 markers.
 
-Updates shared on development boards (e.g., Trello) for transparency.
+Development roadmap publicly shared (Trello/Notion).
 
-Focus on showing step-by-step work (systems, UI, combat, world).
+Focus on transparent step-by-step dev logs → systems, UI, combat, world.
